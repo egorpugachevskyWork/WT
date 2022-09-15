@@ -1,0 +1,8 @@
+javac -d D:\Studying\third_course\ВТ\newLabs\out\production\newLabs D:\Studying\third_course\ВТ\newLabs\src\by\bsuir\WT\lab1\task9\*
+java -classpath D:\Studying\third_course\ВТ\newLabs\out\production\newLabs by.bsuir.WT.lab1.task9.Main
+For executing task 9 from command line
+
+jar -cmf D:\Studying\third_course\ВТ\newLabs\src\by\bsuir\WT\lab1\manifest.mf task9.jar -C D:\Studying\third_course\ВТ\newLabs\out\production\newLabs\ .
+java -jar ./task9.jar
+For creating jar for task 9 . - CURRENT DIRECTORY
+                            ./task9.jar - full path to .jar
