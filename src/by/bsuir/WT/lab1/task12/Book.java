@@ -12,6 +12,12 @@ public class Book {
         this.price = price;
     }
 
+    public String getTitle() { return title; }
+    public String getAuthor() { return author; }
+    public int getPrice() { return price; }
+    public static int getEdition() { return edition; }
+    public static void setEdition(int number) { edition = number; }
+
     public String toString(){
         return "Title: " + title + " Author: " + author + " Price: " + price + " v" + edition;
     }
