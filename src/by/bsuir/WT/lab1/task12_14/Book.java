@@ -1,25 +1,30 @@
-package by.bsuir.WT.lab1.task12;
+package by.bsuir.WT.lab1.task12_14;
 
-public class Book {
+public class Book implements Comparable<Book>, Cloneable{
     private String title;
     private String author;
     private int price;
-    private static int edition = 1;
+    private int isbn;
+    private static int edition = 0;
+
 
     public Book(String title, String author, int price){
         this.title = title;
         this.author = author;
         this.price = price;
+        this.isbn = edition;
+        edition++;
     }
 
     public String getTitle() { return title; }
     public String getAuthor() { return author; }
     public int getPrice() { return price; }
+    public int getIsbn() { return isbn; }
     public static int getEdition() { return edition; }
     public static void setEdition(int number) { edition = number; }
 
     public String toString(){
-        return "Title: " + title + " Author: " + author + " Price: " + price + " v" + edition;
+        return "Title: " + title + " Author: " + author + " Price: " + price + " isbn: " + isbn;
     }
 
     public boolean equals(Object obj){
@@ -38,7 +43,21 @@ public class Book {
         hash = 53 * hash + title.hashCode();
         hash = 53 * hash + price;
         hash = 53 * hash + author.hashCode();
-        hash += edition;
         return hash;
+    }
+
+    public int compareTo(Book obj){
+        if (this.isbn > obj.isbn)
+            return 1;
+        else if (this.isbn < obj.isbn)
+            return -1;
+
+        return 0;
+    }
+
+    public Object clone(){
+        Book book = null;
+        book = new Book(this.title, this.author, this.price);
+        return book;
     }
 }

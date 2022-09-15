@@ -1,6 +1,6 @@
 package by.bsuir.WT.lab1.task13;
 
-import by.bsuir.WT.lab1.task12.Book;
+import by.bsuir.WT.lab1.task12_14.Book;
 
 public class ProgrammerBook extends Book {
     private String language;
@@ -14,7 +14,7 @@ public class ProgrammerBook extends Book {
     }
 
     public String toString(){
-        return "Title: " + this.getTitle() + " Author: " + getAuthor() + " Price: " + getPrice() + " lang: " + language + " lvl: " + level +" v" + getEdition();
+        return "Title: " + this.getTitle() + " Author: " + getAuthor() + " Price: " + getPrice() + " lang: " + language + " lvl: " + level+ " isbn: " + getIsbn();
     }
 
     public boolean equals(Object obj){
@@ -35,7 +35,6 @@ public class ProgrammerBook extends Book {
         hash = 53 * hash + getTitle().hashCode();
         hash = 53 * hash + getPrice();
         hash = 53 * hash + getAuthor().hashCode();
-        hash += 53 * hash + getEdition();
         hash = 53 * hash + language.hashCode();
         hash = 53 * hash + level;
         return hash;

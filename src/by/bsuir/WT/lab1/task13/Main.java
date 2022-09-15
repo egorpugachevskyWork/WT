@@ -1,7 +1,5 @@
 package by.bsuir.WT.lab1.task13;
 
-import by.bsuir.WT.lab1.task12.Book;
-
 public class Main {
     public static void main(String[] args){
         ProgrammerBook book1 = new ProgrammerBook("Master and Margarite", "Bulgakov", 23000, "English", 200);
