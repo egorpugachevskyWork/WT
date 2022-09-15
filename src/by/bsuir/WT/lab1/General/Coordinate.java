@@ -1,10 +1,10 @@
 package by.bsuir.WT.lab1.General;
 
-public class Coordinates{
+public class Coordinate {
 private double _x;
 private double _y;
 
-public Coordinates(double x, double y){
+public Coordinate(double x, double y){
         this._x = x;
         this._y = y;
         }

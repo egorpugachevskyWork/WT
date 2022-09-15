@@ -1,6 +1,6 @@
 package by.bsuir.WT.lab1.task2;
 
-import by.bsuir.WT.lab1.General.Coordinates;
+import by.bsuir.WT.lab1.General.Coordinate;
 import by.bsuir.WT.lab1.task2.data.CoordinatesForTask2;
 import by.bsuir.WT.lab1.task2.logic.Task2;
 
@@ -10,16 +10,16 @@ public class Main {
     private static final DecimalFormat df = new DecimalFormat("0.000");
 
     public static void main(String[] args){
-        Coordinates[] coordinates = CoordinatesForTask2.getCoordinates();
-        for (Coordinates coordinate : coordinates){
+        Coordinate[] coordinates = CoordinatesForTask2.getCoordinates();
+        for (Coordinate coordinate : coordinates){
             double x = coordinate.getX();
             double y = coordinate.getY();
             System.out.print("Coordinate with x = " + df.format(x) + ", y = " + df.format(y));
-            if (Task2.IsCoordinateInMainArea(x, y)){
-                System.out.println(" is in function range");
+            if (Task2.isCoordinateInMainArea(x, y)){
+                System.out.println(" is in function range(TRUE)");
             }
             else {
-                System.out.println(" isn't in function range");
+                System.out.println(" isn't in function range(FALSE)");
             }
         }
     }
