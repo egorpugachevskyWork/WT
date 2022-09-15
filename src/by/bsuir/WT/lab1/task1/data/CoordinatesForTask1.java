@@ -16,7 +16,7 @@ public class CoordinatesForTask1 {
         };
     }
 
-    public static Coordinates[] GetCoordinates() { return _coordinates; }
+    public static Coordinates[] getCoordinates() { return _coordinates; }
 }
 
 

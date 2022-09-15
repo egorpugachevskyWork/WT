@@ -10,10 +10,10 @@ public class Main {
     private static final DecimalFormat df = new DecimalFormat("0.000");
 
     public static void main(String[] args) {
-        Coordinates[] coordinates = CoordinatesForTask1.GetCoordinates();
+        Coordinates[] coordinates = CoordinatesForTask1.getCoordinates();
         for (Coordinates coordinate: coordinates) {
-            double x = coordinate.GetX();
-            double y = coordinate.GetY();
+            double x = coordinate.getX();
+            double y = coordinate.getY();
             System.out.println("x = " + df.format(x) + ", y = " + df.format(y) +
                                ", result = " + df.format(Task1.MainFunction(x, y))
                     );
