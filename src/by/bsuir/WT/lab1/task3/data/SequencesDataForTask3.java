@@ -1,7 +1,7 @@
 package by.bsuir.WT.lab1.task3.data;
 
 public class SequencesDataForTask3 {
-    private static final Sequence[] _sequences;
+    private static Sequence[] _sequences;
 
     static {
         _sequences = new Sequence[] {

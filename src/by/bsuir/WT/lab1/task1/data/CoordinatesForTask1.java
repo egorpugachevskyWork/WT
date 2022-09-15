@@ -3,7 +3,7 @@ package by.bsuir.WT.lab1.task1.data;
 import by.bsuir.WT.lab1.General.Coordinate;
 
 public class CoordinatesForTask1 {
-    private static final Coordinate[] _coordinates;
+    private static Coordinate[] _coordinates;
 
     static {
         _coordinates = new Coordinate[] {
