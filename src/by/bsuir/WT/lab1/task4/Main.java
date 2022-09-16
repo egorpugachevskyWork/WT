@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args){
-        int[] numbers = IntegerArrayForTask4.getArray();
-        int size = IntegerArrayForTask4.getSize();
+        int[] numbers = IntegerArrayForTask4.numbers;
+        int size = IntegerArrayForTask4.SIZE;
         List<Integer> primeIndexes = Task4.getPrimeIndexesFromArray(numbers, size);
         DisplayPrimeElements(primeIndexes);
     }

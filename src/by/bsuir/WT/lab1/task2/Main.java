@@ -10,7 +10,7 @@ public class Main {
     private static final DecimalFormat df = new DecimalFormat("0.000");
 
     public static void main(String[] args){
-        Coordinate[] coordinates = CoordinatesForTask2.getCoordinates();
+        Coordinate[] coordinates = CoordinatesForTask2.coordinates;
         for (Coordinate coordinate : coordinates){
             double x = coordinate.getX();
             double y = coordinate.getY();

@@ -9,8 +9,8 @@ public class Main {
     private static final DecimalFormat df = new DecimalFormat("0.0");
 
     public static void main(String[] args){
-        double[] numbers = DoubleArrayForTask6.getArray();
-        int size = DoubleArrayForTask6.getSize();
+        double[] numbers = DoubleArrayForTask6.numbers;
+        int size = DoubleArrayForTask6.SIZE;
         double[][] squareMatrix = Task6.makeSquareMatrix(numbers, size);
         DisplayMatrix(squareMatrix, size);
     }

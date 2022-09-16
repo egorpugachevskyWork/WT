@@ -12,7 +12,7 @@ public class Main {
     private static final DecimalFormat df = new DecimalFormat("0.000");
 
     public static void main(String[] args){
-        Sequence[] sequences = SequencesDataForTask3.getSequences();
+        Sequence[] sequences = SequencesDataForTask3.sequences;
         for (Sequence sequence : sequences){
             double first = sequence.getFirst();
             double last = sequence.getLast();

@@ -5,8 +5,8 @@ import by.bsuir.WT.lab1.task5.logic.Task5;
 
 public class Main {
     public static void main(String[] args){
-        int[] numbers = IntegerArrayForTask5.getArray();
-        int size = IntegerArrayForTask5.getSize();
+        int[] numbers = IntegerArrayForTask5.numbers;
+        int size = IntegerArrayForTask5.SIZE;
 
         int amountOfSequence = size - Task5.findAmountOfMaxIncreasingSubsequence(numbers, size);
         DisplayAmountOfErasedElements(amountOfSequence);

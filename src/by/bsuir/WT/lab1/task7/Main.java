@@ -9,8 +9,8 @@ public class Main {
     private static final DecimalFormat df = new DecimalFormat("0.000");
 
     public static void main(String[] args){
-        double[] numbers = DoubleArrayForTask7.getArray();
-        int size = DoubleArrayForTask7.getSize();
+        double[] numbers = DoubleArrayForTask7.numbers;
+        int size = DoubleArrayForTask7.SIZE;
         DisplayNumbers(numbers, size);
         Task7.sortNumbers(numbers, size);
         DisplayNumbers(numbers, size);

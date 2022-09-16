@@ -1,10 +1,10 @@
 package by.bsuir.WT.lab1.task3.data;
 
 public class SequencesDataForTask3 {
-    private static Sequence[] _sequences;
+    public static final Sequence[] sequences;
 
     static {
-        _sequences = new Sequence[] {
+        sequences = new Sequence[] {
                 new Sequence(0, 0, 0),
                 new Sequence(1.44, 2.55, 0.1),
                 new Sequence(2, 3, 50),
@@ -15,5 +15,4 @@ public class SequencesDataForTask3 {
         };
     }
 
-    public static Sequence[] getSequences(){ return _sequences; }
 }
